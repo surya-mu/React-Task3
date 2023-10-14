@@ -1,0 +1,143 @@
+
+/* app.css */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Helvetica Neue', sans-serif; /* Change the font family */
+  background-color: #e09f9f; /* Set a background color */
+}
+
+h1 {
+  font-size: 28px; /* Increase the font size */
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif; /* Change the font for the heading */
+}
+
+button {
+  padding: 12px 24px; /* Adjust button padding */
+  background-color: #ff5733; /* Change the button background color */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.color-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.color-item {
+  width: 60px; /* Increase the color item size */
+  height: 60px;
+  margin: 8px; /* Adjust margin */
+  cursor: pointer;
+  border: 2px solid transparent; /* Add a border to distinguish selected color */
+}
+
+.selected-color {
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif; /* Change the font for the selected color text */
+  color: #333; /* Change text color */
+}
+
+.selected-color::before {
+  content: 'Selected Color: ';
+}
+
+.selected-color::after {
+  content: '';
+  display: inline-block;
+  width: 30px; /* Increase size of the color box */
+  height: 30px;
+  margin-left: 10px;
+}
+
+/* App.css */
+
+window {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Set the background color for the entire document */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.app-container {
+  text-align: center; /* Center align text within app-container */
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #ff5733;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.color-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.color-item {
+  width: 60px;
+  height: 60px;
+  margin: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.selected-color {
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.selected-color::before {
+  content: 'Selected Color: ';
+}
+
+.selected-color::after {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  
+}
+
+/* App.css */
+
+/* ... (previous styles) ... */
+
+.color-item {
+  width: 60px;
+  height: 60px;
+  margin: 8px;
+  cursor: pointer;
+  border: 2px solid transparent; /* Add a border to all color items */
+}
+
+.color-item.selected {
+  border: 2px transparent; /* Remove the border from selected color items */
+}
+
+/* ... (remaining styles) ... */
